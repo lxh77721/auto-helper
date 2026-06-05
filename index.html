@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI自动化服务 - 帮你搞定重复性工作</title>
+    <meta name="description" content="专业自动化服务：数据抓取、Excel处理、Bot开发、网站制作。价格实惠，交付快速。">
+    <meta name="keywords" content="自动化,数据抓取,Excel处理,Bot开发,网站制作,Python脚本,爬虫">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; color: #333; line-height: 1.6; }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 15px; }
+        .hero p { font-size: 1.2em; opacity: 0.9; max-width: 600px; margin: 0 auto 30px; }
+        .hero-btn { display: inline-block; background: #fff; color: #667eea; padding: 15px 40px; border-radius: 30px; font-size: 1.1em; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        
+        /* Services */
+        .services { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        .services h2 { text-align: center; font-size: 2em; margin-bottom: 40px; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .service-card { background: #fff; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; transition: transform 0.2s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-icon { font-size: 2.5em; margin-bottom: 15px; }
+        .service-card h3 { font-size: 1.3em; margin-bottom: 10px; color: #333; }
+        .service-card p { color: #666; margin-bottom: 15px; }
+        .service-price { font-size: 1.4em; font-weight: bold; color: #667eea; }
+        .service-price small { font-size: 0.6em; color: #999; }
+        
+        /* Examples */
+        .examples { background: #f8f9fa; padding: 60px 20px; }
+        .examples-inner { max-width: 1000px; margin: 0 auto; }
+        .examples h2 { text-align: center; font-size: 2em; margin-bottom: 40px; }
+        .example-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .example-item { background: #fff; padding: 25px; border-radius: 12px; border-left: 4px solid #667eea; }
+        .example-item h4 { color: #667eea; margin-bottom: 8px; }
+        .example-item p { color: #666; font-size: 0.95em; }
+        
+        /* How it works */
+        .how { padding: 60px 20px; max-width: 800px; margin: 0 auto; text-align: center; }
+        .how h2 { font-size: 2em; margin-bottom: 40px; }
+        .steps { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .step { width: 200px; }
+        .step-num { background: #667eea; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: bold; margin: 0 auto 15px; }
+        .step h4 { margin-bottom: 8px; }
+        .step p { color: #666; font-size: 0.9em; }
+        
+        /* CTA */
+        .cta { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 60px 20px; text-align: center; }
+        .cta h2 { font-size: 2em; margin-bottom: 15px; }
+        .cta p { font-size: 1.1em; opacity: 0.9; margin-bottom: 30px; }
+        .cta-btn { display: inline-block; background: #fff; color: #667eea; padding: 15px 40px; border-radius: 30px; font-size: 1.1em; font-weight: bold; text-decoration: none; }
+        
+        /* Contact */
+        .contact { padding: 40px 20px; text-align: center; }
+        .contact p { color: #666; margin-bottom: 10px; }
+        .qr-code { max-width: 200px; margin: 20px auto; border-radius: 12px; border: 3px solid #667eea; }
+        
+        footer { background: #2c3e50; color: #aaa; padding: 30px; text-align: center; font-size: 0.9em; }
+        
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8em; }
+            .steps { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🤖 AI 自动化服务</h1>
+        <p>帮你搞定重复性工作，让你专注更重要的事</p>
+        <a href="#order" class="hero-btn">立即下单 →</a>
+    </div>
+
+    <div class="services">
+        <h2>🛠️ 服务项目</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>数据抓取</h3>
+                <p>从任意网站抓取数据，导出为 Excel/CSV。竞品价格、招聘信息、商品数据等。</p>
+                <div class="service-price">¥50 起 <small>/个任务</small></div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📝</div>
+                <h3>数据处理</h3>
+                <p>Excel 批量处理、数据清洗、格式转换、报表生成。告别手动操作。</p>
+                <div class="service-price">¥30 起 <small>/个任务</small></div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔔</div>
+                <h3>监控提醒</h3>
+                <p>监控网页变化、价格变动、新内容发布。有变化自动通知你。</p>
+                <div class="service-price">¥80 起 <small>/个任务</small></div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>Bot 开发</h3>
+                <p>微信/Telegram/Discord 自动回复 Bot、群管理 Bot、客服 Bot。</p>
+                <div class="service-price">¥200 起 <small>/个</small></div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>网站制作</h3>
+                <p>产品落地页、个人主页、展示网站。响应式设计，手机电脑都能看。</p>
+                <div class="service-price">¥100 起 <small>/个</small></div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>自定义脚本</h3>
+                <p>任何重复性工作都可以自动化。告诉我你的需求，我来实现。</p>
+                <div class="service-price">¥50 起 <small>/个任务</small></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="examples">
+        <div class="examples-inner">
+            <h2>💡 真实案例</h2>
+            <div class="example-list">
+                <div class="example-item">
+                    <h4>"帮我每天抓取竞品价格"</h4>
+                    <p>自动抓取 3 个竞品网站的价格，每天早上 9 点发送报告到微信。收费：¥150</p>
+                </div>
+                <div class="example-item">
+                    <h4>"帮我把 200 个 Excel 合并成一个"</h4>
+                    <p>200 个格式相同的 Excel 文件，自动合并、去重、生成汇总表。收费：¥80</p>
+                </div>
+                <div class="example-item">
+                    <h4>"帮我做一个群管理 Bot"</h4>
+                    <p>自动欢迎新人、关键词回复、违规检测、数据统计。收费：¥300</p>
+                </div>
+                <div class="example-item">
+                    <h4>"帮我监控这个网页有没有更新"</h4>
+                    <p>每 10 分钟检查一次，有新内容自动发微信通知。收费：¥100</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how">
+        <h2>🚀 如何下单</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h4>告诉我需求</h4>
+                <p>用微信扫码联系我，说清楚你要做什么</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h4>我来报价</h4>
+                <p>根据复杂度给你报价，确认后付款</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h4>快速交付</h4>
+                <p>简单任务当天交付，复杂任务 1-3 天</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta" id="order">
+        <h2>💬 立即下单</h2>
+        <p>扫码加微信，说清楚你的需求，我来帮你搞定</p>
+        <img src="contact-qr.jpg" alt="微信联系" class="qr-code">
+        <p style="margin-top:15px; opacity:0.8;">简单任务 ¥30 起 | 当天交付 | 不满意退款</p>
+    </div>
+
+    <div class="contact">
+        <p>📱 微信扫码联系（见上方）</p>
+        <p>⏰ 工作时间：9:00-22:00</p>
+        <p>💰 付款方式：微信/支付宝</p>
+    </div>
+
+    <footer>
+        <p>© 2026 AI自动化服务 | 让重复工作消失</p>
+    </footer>
+</body>
+</html>
